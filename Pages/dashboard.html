@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Swappy. | Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">Swappy<span>.</span></a>
+        
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Caută în favorite...">
+        </div>
+
+        <nav class="nav-links">
+            <a href="../index.html">Acasă</a>
+            <div class="category-item">
+                <a href="javascript:void(0)" onclick="event.preventDefault()">Categorii <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown">
+                    <a href="carti.html"><i class="fa-solid fa-book"></i> Cărți</a>
+                    <a href="haine.html"><i class="fa-solid fa-shirt"></i> Haine</a>
+                    <a href="gadgeturi.html"><i class="fa-solid fa-microchip"></i> Gadgeturi</a>
+                    <a href="accesorii.html"><i class="fa-solid fa-gem"></i> Accesorii</a>
+                    <a href="animale.html"><i class="fa-solid fa-paw"></i> Accesorii Animale</a>
+                    <a href="mobila.html"><i class="fa-solid fa-couch"></i> Mobilă</a>
+                    <a href="jucarii.html"><i class="fa-solid fa-gamepad"></i> Jucării</a>
+                    <a href="sport.html"><i class="fa-solid fa-volleyball"></i> Sport</a>
+                </div>
+            </div>
+            <a href="chat.html"><i class="fa-solid fa-comment-dots"></i> Mesaje</a>
+        </nav>
+        <a href="add.html" class="btn-add"><i class="fa-solid fa-plus"></i> Adaugă anunț</a>
+    </header>
+
+   <main class="container">
+
+    <h1 class="section-title">Dashboard</h1>
+
+    <div class="dashboard-grid">
+
+        <div class="dash-card">
+            <i class="fa-solid fa-box"></i>
+            <h3>Produse încărcate</h3>
+            <p>18 produse active</p>
+        </div>
+
+        <div class="dash-card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Favorite primite</h3>
+            <p>64 utilizatori au apreciat</p>
+        </div>
+
+        <div class="dash-card">
+            <i class="fa-solid fa-comment-dots"></i>
+            <h3>Mesaje</h3>
+            <p>7 conversații active</p>
+        </div>
+
+        <div class="dash-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Rata activitate</h3>
+            <p>+32% această săptămână</p>
+        </div>
+
+    </div>
+
+    <div class="stats-section">
+
+        <div class="stats-box">
+
+            <h2>Performanță generală</h2>
+
+            <div class="performance-summary">
+                <div class="score-box">
+                    <div>
+                        <span>Scor general</span>
+                        <strong>84%</strong>
+                    </div>
+                    <div class="status-tag">Stabil +6%</div>
+                </div>
+                <p class="score-note">Rata de răspuns este ridicată, vizualizările produselor cresc, iar schimburile finalizate sunt aproape de target.</p>
+            </div>
+        </div>
+
+        <div class="rating-box">
+
+            <h2>Rating utilizator</h2>
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>4.6 din 5 bazat pe feedback</p>
+        </div>
+    </div>
+</main>
+    <footer>
+         <p>&copy; Swappy. Creat pentru comunitatea elevilor.</p>
+        <div style="display:flex; gap:20px;">
+            <a href="../index.html" style="color:var(--black); text-decoration:none; font-weight:700;">Acasă</a>
+            <a href="#" style="color:var(--brown); text-decoration:none;">Siguranță</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Swappy. | Mesaje</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <a href="../index.html" class="logo">Swappy<span>.</span></a>
+    <nav class="nav-links">
+        <a href="../index.html">Acasă</a>
+        <div class="category-item">
+                <a href="#">Categorii <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown">
+                    <a href="Pages/carti.html"><i class="fa-solid fa-book"></i> Cărți</a>
+                    <a href="Pages/haine.html"><i class="fa-solid fa-shirt"></i> Haine</a>
+                    <a href="Pages/gadgeturi.html"><i class="fa-solid fa-microchip"></i> Gadgeturi</a>
+                    <a href="Pages/accesorii.html"><i class="fa-solid fa-gem"></i> Accesorii</a>
+                    <a href="Pages/animale.html"><i class="fa-solid fa-paw"></i> Accesorii Animale </a>
+                    <a href="Pages/mobila.html"><i class="fa-solid fa-couch"></i> Mobilă</a>
+                    <a href="Pages/jucarii.html"><i class="fa-solid fa-gamepad"></i> Jucării</a>
+                    <a href="Pages/sport.html"><i class="fa-solid fa-volleyball"></i> Sport</a>
+                </div>
+            </div>
+        <a href="dashboard.html">Dashboard</a>
+        
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="chat-box">
+
+        <div class="chat-sidebar">
+
+            <h3 style="margin-bottom:20px;">Conversații</h3>
+
+            <div class="chat-list">
+
+                <div class="chat-user active-chat" data-chat="elena">
+                    <div class="profile-img-wrapper">
+                        <img src="https://i.pravatar.cc/100?img=5">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="user-info-text">
+                        <span class="user-name">Elena Popa</span>
+                        <span class="user-rank">Scrie un mesaj...</span>
+                    </div>
+                </div>
+
+                <div class="chat-user" data-chat="alex">
+                    <div class="profile-img-wrapper">
+                        <img src="https://i.pravatar.cc/100?img=12">
+                        <div class="status-dot offline"></div>
+                    </div>
+                    <div class="user-info-text">
+                        <span class="user-name">Alex Rusu</span>
+                        <span class="user-rank">Schimb skateboard?</span>
+                    </div>
+                </div>
+
+                <div class="chat-user" data-chat="maria">
+                    <div class="profile-img-wrapper">
+                        <img src="https://i.pravatar.cc/100?img=32">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="user-info-text">
+                        <span class="user-name">Maria Luca</span>
+                        <span class="user-rank">Ți-a trimis o poză</span>
+                    </div>
+                </div>
+
+                <div class="chat-user" data-chat="david">
+                    <div class="profile-img-wrapper">
+                        <img src="https://i.pravatar.cc/100?img=15">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="user-info-text">
+                        <span class="user-name">David Munteanu</span>
+                        <span class="user-rank">Laptop disponibil?</span>
+                    </div>
+                </div>
+
+                <div class="chat-user" data-chat="ion">
+                    <div class="profile-img-wrapper">
+                        <img src="https://i.pravatar.cc/100?img=20">
+                        <div class="status-dot offline"></div>
+                    </div>
+                    <div class="user-info-text">
+                        <span class="user-name">Ionela Croitoru</span>
+                        <span class="user-rank">Salut, mai ai produsul?</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="chat-main">
+
+            <div class="messages-container">
+
+                <div class="messages active-messages" id="elena">
+                    <div class="bubble theirs">Salut! Mai ai acea brățară Pandora?</div>
+                    <div class="bubble mine">Da, este disponibilă.</div>
+                    <div class="bubble theirs">Perfect! O pot schimba pe un colier?</div>
+                </div>
+
+                <div class="messages" id="alex">
+                    <div class="bubble theirs">Salut! Schimbi hoverboardul?</div>
+                    <div class="bubble mine">Da, ce oferi?</div>
+                    <div class="bubble theirs">Căști wireless + 10€</div>
+                </div>
+
+                <div class="messages" id="maria">
+                    <div class="bubble theirs">Bună! Mai ai cartea „Morometii”?</div>
+                    <div class="bubble mine">Salut! Da, o am disponibilă.</div>
+                </div>
+
+                <div class="messages" id="david">
+                    <div class="bubble theirs">Laptopul mai este valabil?</div>
+                    <div class="bubble mine">Da, încă este.</div>
+                </div>
+
+                <div class="messages" id="ion">
+                    <div class="bubble theirs">Salut, mai ai acel hanorac Nike?</div>
+                    <div class="bubble mine">Da, este încă disponibil.</div>
+                </div>
+
+            </div>
+
+            <div style="padding:20px; background:var(--white); display:flex; gap:12px; align-items:center;">
+                <i class="fa-solid fa-paperclip" style="color:var(--brown); cursor:pointer;"></i>
+                <input type="text" placeholder="Trimite un mesaj..." style="flex:1;">
+                <button class="btn-add">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+<footer>
+    <p>&copy; Swappy. Discută în siguranță.</p>
+    <div style="display:flex; gap:20px;">
+        <a href="../index.html" style="color:var(--black); text-decoration:none; font-weight:700;">Acasă</a>
+    </div>
+</footer>
+
+<script>
+const users = document.querySelectorAll(".chat-user");
+const chats = document.querySelectorAll(".messages");
+
+users.forEach(user => {
+    user.addEventListener("click", () => {
+
+        users.forEach(u => u.classList.remove("active-chat"));
+        chats.forEach(c => c.classList.remove("active-messages"));
+
+        user.classList.add("active-chat");
+
+        const chatId = user.getAttribute("data-chat");
+        document.getElementById(chatId).classList.add("active-messages");
+    });
+});
+</script>
+</body>
+</html>
